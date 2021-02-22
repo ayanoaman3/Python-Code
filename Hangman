@@ -1,0 +1,34 @@
+def Play(word):
+    guessed = ""
+    l = ""
+    array =[]
+    word = word.lower()
+    for i in word:
+        guessed += "-"
+    print(guessed)
+    for i in range(len(word)*2):
+        l = input("Type the letter: ")
+        if l not in array:
+            array.append(l)
+            fails = False
+            guessed = ""
+            for ch in word:
+                if ch in array:
+                    print(ch, end="")
+                else:
+                    print("-", end="")
+                    fails = True
+            print("\n")
+        else:
+            print("Please type another letter")
+
+        if fails == False:
+            print("YOU WON")
+            break
+        else:
+            print("Not there yet...")
+    if fails == True:
+        print("GAME OVER")
+
+if __name__ == "__main__":
+    print(Play("Kitten"))
