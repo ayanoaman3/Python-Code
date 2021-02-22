@@ -11,4 +11,5 @@ def solve(num1, sign, num2):
     print(num1^num2)
     
 # sample try
-if 
+if __name__ == "__main__":
+  solve(15, "/", 3)
