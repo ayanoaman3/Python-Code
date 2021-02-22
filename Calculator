@@ -1,0 +1,14 @@
+def solve(num1, sign, num2):
+  if sign=="+":
+    print(num1+num2)
+  elif sign=="-":
+    print(num1-num2)
+  elif sign=="*":
+    print(num1*num2)
+  elif sign=="/":
+    print(num1/num2)
+  elif sign=="^":
+    print(num1^num2)
+    
+# sample try
+if 
