@@ -30,5 +30,7 @@ def Play(word):
     if fails == True:
         print("GAME OVER")
 
+
+# sample try
 if __name__ == "__main__":
     print(Play("Kitten"))
